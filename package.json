@@ -1,0 +1,16 @@
+{
+	"name": "table-api",
+	"version": "1.0.0",
+	"description": "Simple REST API to perform CRUD",
+	"main": "app.js",
+	"scripts": {
+		"start": "nodemon app.js"
+	},
+	"keywords": [],
+	"author": "WarOnKhoff <voronkovs.aleksandrs@gmail.com>",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"nodemon": "^2.0.2"
+	}
+}
