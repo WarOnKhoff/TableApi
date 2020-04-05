@@ -18,9 +18,6 @@ const PostSchema = Schema({
 	payRate: {
 		type: Number,
 	},
-	companyRate: {
-		type: Number,
-	},
 	created: {
 		type: Date,
 		require: true,

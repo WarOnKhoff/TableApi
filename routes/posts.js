@@ -47,10 +47,10 @@ router.delete('/:id', async (req, res) => {
 
 router.patch('/:id', async (req, res) => {
 	try {
-		const { companyName, stack, status, payRate, companyRate } = req.body
+		const { companyName, stack, status, payRate } = req.body
 		const updated = await Post.updateOne(
 			{ _id: req.params.id },
-			{ $set: { companyName, stack, status, payRate, companyRate } },
+			{ $set: { companyName, stack, status, payRate } },
 		)
 		res.json(updated)
 	} catch (err) {
